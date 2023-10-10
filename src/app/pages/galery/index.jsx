@@ -11,18 +11,20 @@ import { Pagination } from 'swiper/modules';
 
 export default function Galery() {
   return (
+    <div className='px-4 bg-black'>
     <Swiper
       spaceBetween={5}
       slidesPerView={3}
       pagination={true} modules={[Pagination]}
       onSlideChange={() => console.log('slide change')}
       onSwiper={(swiper) => console.log(swiper)}
-     className='bg-black pt-5 mySwiper'>
+     className=' pt-5 mySwiper mt-[-1px] py-2'>
       <SwiperSlide><Image className='w-full' src={aboutMe} alt='img'/></SwiperSlide>
       <SwiperSlide><Image className='w-full' src={aboutMe} alt='img'/></SwiperSlide>
       <SwiperSlide><Image className='w-full' src={aboutMe} alt='img'/></SwiperSlide>
       <SwiperSlide><Image className='w-full' src={aboutMe} alt='img'/></SwiperSlide>
       ...
     </Swiper>
+    </div>
   );
 };
