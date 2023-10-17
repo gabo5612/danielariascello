@@ -1,23 +1,41 @@
 'use client'
 import { createContext, useEffect, useState } from "react";
-import language0 from '/public/assets/language0.json'
-import language1 from '/public/assets/language1.json'
-import language2 from '/public/assets/language2.json'
-import language3 from '/public/assets/language3.json'
+import englishPack from '/public/assets/englishPack.json'
+import englishConcerts from '/public/assets/englishConcerts.json'
+import spanishPack from '/public/assets/spanishPack.json'
+import spanishConcerts from '/public/assets/spanishConcerts.json'
+import frenchPack from '/public/assets/frenchPack.json'
+import frenchConcerts from '/public/assets/frenchConcerts.json'
+import germanPack from '/public/assets/germanPack.json'
+import germanConcerts from '/public/assets/germanConcerts.json'
 export const Context=createContext()
+
+const date =new Date()
+const day= date.getDate().toString()
+const month= date.getMonth()
+const year=  date.getFullYear()
+
+const formattedDate = day+ month + year
+
+console.log(formattedDate)
 
 export const ContextProvider=({children})=>{
     const [language, setLanguage]=useState(0)
-    const [text, setText]=useState(language0)
+    const [text, setText]=useState(englishPack)
+    const [concerts, setConcerts]=useState(englishConcerts)
     useEffect(()=>{
         switch(language){
-            case 1: setText(language1);
+            case 1: setText(spanishPack);
+                    setConcerts(spanishConcerts)
+            break;r
+            case 2: setText(frenchPack);
+                    setConcerts(frenchConcerts)
             break;
-            case 2: setText(language2);
-            break;
-            case 3: setText(language3);
+            case 3: setText(germanPack);
+                    setConcerts(germanConcerts)
             break
-            default: setText(language0)
+            default: setText(englishPack)
+                    setConcerts(englishConcerts)
             break
         }
     },[language])
@@ -25,7 +43,8 @@ export const ContextProvider=({children})=>{
     return(
         <Context.Provider value={{
             text, setText,
-            language, setLanguage
+            language, setLanguage,
+            concerts, setConcerts
         }}>
         {children}
         </Context.Provider>

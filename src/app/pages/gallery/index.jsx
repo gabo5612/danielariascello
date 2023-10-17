@@ -9,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
 
-export default function Galery() {
+export default function Gallery() {
   return (
     <div className='px-4 bg-black'>
     <Swiper

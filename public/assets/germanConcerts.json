@@ -1,0 +1,27 @@
+[
+    {   
+    "id": 1,
+    "date": "2010/2023",
+    "place":"Aleman",
+    "person1": "Messi Alberto",
+    "person2": "Messi Alberto",
+    "person3": "Messi Alberto"
+},
+{
+    "id": 2,
+    "date": "22/10/2023",
+    "place":"Aleman",
+    "person1": "Messi Alberto",
+    "person2": "Messi Alberto",
+    "person3": "Messi Alberto"
+},
+{
+    "id": 3,
+    "date": "24/10/2023",
+    "place":"Aleman",
+    "person1": "Messi Alberto",
+    "person2": "Messi Alberto",
+    "person3": "Messi Alberto"
+}
+
+]

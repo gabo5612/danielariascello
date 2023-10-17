@@ -1,6 +1,7 @@
 
 import AboutMe from './pages/aboutMe'
-import Galery from './pages/galery'
+import Concerts from './pages/concerts'
+import Gallery from './pages/gallery'
 
 import Header from './pages/header'
 
@@ -9,8 +10,9 @@ export default function Home() {
     <>
    <Header/>
    <AboutMe/>
-    <Galery/>
-   </>
+    <Gallery/>
+    <Concerts/>
+    </>
    
   )
 }
