@@ -4,5 +4,6 @@
     "aboutMe": "About me",
     "aboutMeText":"Lorem ipsum dolor sit amet consectetur. Morbi neque nibh vitae feugiat consequat leo in. Gravida morbi ac tortor odio diam. Aenean dolor felis in ac  cras aliquam a. Interdum est vulputate dolor cras congue egestas aliquam.",
     "aboutMeButton": "Biography",
-    "nextConcertTitle" : "Upcoming concerts"
+    "nextConcertTitle" : "Upcoming concerts",
+    "concertsButton":"See all"
 } 

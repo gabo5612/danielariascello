@@ -64,4 +64,6 @@ table {
 	display: block;
 	width: 100%;
   }
-  
+  .bgConcerts{
+	background: rgba(217, 217, 217, 0.75);
+  }

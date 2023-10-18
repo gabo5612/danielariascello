@@ -16,7 +16,20 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          'nextConcertbg':"url('/assets/proximosconciertos.jpg')"
       },
+      colors:{
+        'primary-black':'#050206',
+        'primary-white':'#F4F4F4',
+        'secunday':'#948174',
+        'dark':'#191919',
+        'gradiant1':'#9481744A',
+        'gradiant2':'#050206CC',
+        'gradiant3':'#050206'
+      },
+      fontFamily:{
+        lora:['var(--font-lora)']
+      }
     },
   },
   plugins: [],
