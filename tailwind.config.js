@@ -28,7 +28,9 @@ module.exports = {
         'gradiant3':'#050206'
       },
       fontFamily:{
-        lora:['var(--font-lora)']
+        lora:['var(--font-lora)'],
+        cinzel:['var(--font-Cinzel-Decorative)'],
+        corinthia:['var(--font-Corinthia)']
       }
     },
   },
