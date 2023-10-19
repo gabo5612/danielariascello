@@ -11,5 +11,9 @@
     "contactEmail": "E-mail",
     "contactPhone":"Phone",
     "contactMessage":"Message",
-    "contactButton":"Send message"
+    "contactButton":"Send message",
+    "concerts":"Concerts",
+    "musicTracks":"Music tracks",
+    "termOfUse":"Term of use",
+    "privatePolicy":"Private policy"
 } 
