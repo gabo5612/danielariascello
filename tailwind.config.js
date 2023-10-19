@@ -16,8 +16,9 @@ module.exports = {
         'formImg':"url('/assets/formImg.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-          'nextConcertbg':"url('/assets/proximosconciertos.jpg')"
+        'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'nextConcertbg':"url('/assets/proximosconciertos.jpg')",
+        'footerBg':"url('/assets/notas.jpg')"
       },
       colors:{
         'primary-black':'#050206',

@@ -14,7 +14,7 @@ export default function ContactForm() {
            <Form/>
          
         </div>
-        <div className='bg-formImg  bg-cover bg-top h-[350px] w-11/12 rounded-b-lg '>
+        <div className='bg-formImg  bg-cover bg-top h-[40vh] w-11/12 rounded-b-lg '>
       
         </div>
     </div>

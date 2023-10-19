@@ -1,4 +1,5 @@
 
+import Footer from './pages/footer'
 import AboutMe from './pages/home/aboutMe'
 import Concerts from './pages/home/concerts'
 import ContactForm from './pages/home/contactForm'
@@ -14,6 +15,7 @@ export default function Home() {
     <Gallery/>
     <Concerts/>
     <ContactForm/>
+    <Footer/>
     </>
    
   )
