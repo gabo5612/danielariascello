@@ -13,6 +13,7 @@ module.exports = {
         'aboutMe': "url('/assets/aboutme.png')",
         'aboutMe1': "url('/assets/aboutme1.png')",
         'aboutMe2': "url('/assets/aboutme2.png')",
+        'formImg':"url('/assets/formImg.jpg')",
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
@@ -22,6 +23,8 @@ module.exports = {
         'primary-black':'#050206',
         'primary-white':'#F4F4F4',
         'secunday':'#948174',
+        'formColor':'#D9D9D9',
+        'formText':'#838383',
         'dark':'#191919',
         'gradiant1':'#9481744A',
         'gradiant2':'#050206CC',
