@@ -8,9 +8,9 @@ import { useContext } from "react";
 export default function Footer() {
     const context = useContext(Context);
   return (
-    <div className='bg-footerBg bg-cover bg-bottom h-[70vh]'>
+    <div className='bg-footerBg bg-cover bg-bottom h-[70dvh] mt-[-2px]'>
         <div className='bg-dark/80 h-full'>
-        <div className='bg-gradient-to-b from-gradiant2  h-[15vh]'></div>
+        <div className='bg-gradient-to-b from-gradiant2  h-[15dvh]'></div>
         <div className="flex flex-col justify-between h-4/6">
             <h2 className="text-5xl text-center text-white font-cinzel text-shadow-md ">Daniel Arias</h2>
             <h3 className='text-center text-6xl text-shadow-md  font-corinthia text-secunday '>Cello</h3>

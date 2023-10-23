@@ -2,6 +2,7 @@
 import { useContext } from 'react';
 import { Context } from '@/app/hooks/hook';
 import 'tailwindcss/tailwind.css';
+import PlayButton from '@/app/playButton';
 
 export default function Header(){
     const context=useContext(Context)
@@ -12,7 +13,9 @@ export default function Header(){
                     <h1 className="text-5xl text-center text-white font-cinzel text-shadow-md drop-shadow-xl ">Daniel Arias</h1>
                     <h2 className='text-end text-6xl text-shadow-md  font-corinthia text-secunday '>Cello</h2>
                     </div>
+                   
                 </div>
+                <PlayButton/>
         </div>
     );
 }

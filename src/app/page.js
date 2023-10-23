@@ -6,6 +6,7 @@ import ContactForm from './pages/home/contactForm'
 import Gallery from './pages/home/gallery'
 
 import Header from './pages/home/header'
+import Video from './pages/home/video'
 
 export default function Home() {
   return (
@@ -13,9 +14,11 @@ export default function Home() {
    <Header/>
    <AboutMe/>
     <Gallery/>
+    <Video/>
     <Concerts/>
     <ContactForm/>
     <Footer/>
+
     </>
    
   )
