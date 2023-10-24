@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { Context } from '@/app/hooks/hook';
 import 'tailwindcss/tailwind.css';
 import PlayButton from '@/app/playButton';
+import NavBar from '../../navBar';
 
 export default function Header(){
     const context=useContext(Context)
@@ -15,7 +16,9 @@ export default function Header(){
                     </div>
                    
                 </div>
-                <PlayButton/>
+                <NavBar/>
+                {!context.menuIsOpen && <PlayButton/>}
+                
         </div>
     );
 }

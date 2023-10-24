@@ -1,30 +1,15 @@
 'use client'
-import useSound from 'use-sound';
 import Image from 'next/image'
-import { useState } from 'react';
+import { useContext } from 'react';
+import { Context } from '../hooks/hook';
 
 export default function PlayButton() {
-
-
-    const [play, {pause}] = useSound('/sounds/Faure.mp3');
-      const [isPlaying, setIsPlaying]=useState(false)
-   
-      const handlePlaying=()=>{
-        if(isPlaying){
-          pause()
-          setIsPlaying(!isPlaying)
-
-      
-        }else{
-          play()
-          setIsPlaying(!isPlaying)
-  
-        }
-      }
+  const context = useContext(Context);
+     
   return (
     <div className='fixed bottom-6 right-4 z-50'>
-      <button className='sticky' onClick={()=> handlePlaying()} >
-        <Image width='75' height='75' src={isPlaying? '/assets/pause.svg' : '/assets/play.svg'} alt='play' />
+      <button className='sticky' onClick={()=> context.handlePlaying()} >
+        <Image width='75' height='75' src={context.isPlaying? '/assets/pause.svg' : '/assets/play.svg'} alt='play' className={!context.isPlaying && 'animate-bounce ease-in-out'}/>
       </button>
     </div>
   );

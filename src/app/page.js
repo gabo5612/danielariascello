@@ -7,6 +7,7 @@ import Gallery from './pages/home/gallery'
 
 import Header from './pages/home/header'
 import Video from './pages/home/video'
+import MobileMenu from './pages/navBar/mobileMenu'
 
 export default function Home() {
   return (

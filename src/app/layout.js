@@ -31,7 +31,7 @@ export default function RootLayout({ children }) {
         <title>Daniel Arias</title>
       </Head>
       <Provider>
-        <body>{children}</body>
+        <body className="scroll-smooth">{children}</body>
       </Provider>
     </html>
   )
