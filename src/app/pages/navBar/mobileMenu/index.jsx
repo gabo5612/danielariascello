@@ -6,10 +6,6 @@ import { useContext } from "react";
 
 export default function MobileMenu() {
   const context = useContext(Context);
-  const us = "/assets/us.svg";
-  const german = "/assets/german.svg";
-  const spain = "/assets/spain.svg";
-  const france = "/assets/france.svg";
   const height = "45";
   const width = "45";
   return (
@@ -30,10 +26,10 @@ export default function MobileMenu() {
           <Link href="">{context.text.contactTitle}</Link>
         </div>
         <div className="flex justify-center gap-4">
-          <Image src={spain} alt="spain" height={height} width={width} />
-          <Image src={german} alt="german" height={height} width={width} />
-          <Image src={france} alt="france" height={height} width={width} />
-          <Image src={us} alt="us" height={height} width={width} />
+          <Image src={context.spanish} alt="Spanish" height={height} width={width} />
+          <Image src={context.german} alt="German" height={height} width={width} />
+          <Image src={context.french} alt="French" height={height} width={width} />
+          <Image src={context.english} alt="English" height={height} width={width} />
         </div>
       </div>
     </div>

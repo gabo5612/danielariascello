@@ -16,7 +16,8 @@ export default function Header(){
                     </div>
                    
                 </div>
-                <NavBar/>
+              <NavBar/>
+               
                 {!context.menuIsOpen && <PlayButton/>}
                 
         </div>
