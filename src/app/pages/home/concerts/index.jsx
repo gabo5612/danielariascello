@@ -10,13 +10,13 @@ export default function Concerts() {
     <div key={concert.id} className="w-10/12">
       <div className="flex justify-center items-center gap-4">
         <div className="w-10/12 border-b border-primary-black"></div>
-        <div className="font-cinzel font-extrabold text-3xl font- ">
+        <div className="font-cinzel font-extrabold text-3xl md:text-4xl">
           {concert.day}
         </div>
         <div className="w-10/12 border-b border-primary-black"></div>
       </div>
       <div className="flex flex-col items-center">
-        <span className="font-cinzel font-extrabold text-l">
+        <span className="font-cinzel font-extrabold text-l md:text-xl">
           {concert.month}
         </span>
         <span className="font-lora font-bold my-2">{concert.place}</span>
@@ -49,7 +49,7 @@ export default function Concerts() {
     <div className="flex justify-center bg-gradient-radial from-gradiant1 from-30% via-gradiant2 via-70% to-gradiant3 to-80% mt-[-1px] pb-12">
       <div className=" bg-nextConcertbg bg-cover  bg-center w-11/12 rounded-lg">
         <div className="flex items-center flex-col bg-white/75 w-full rounded-lg">
-          <h3 className="font-lora text-2xl font-bold my-4">
+          <h3 className="font-lora text-2xl font-bold my-4 md:text-3xl">
             {context.text.nextConcertTitle}
           </h3>
           {concerts}

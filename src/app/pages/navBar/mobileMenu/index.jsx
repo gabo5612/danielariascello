@@ -23,7 +23,7 @@ export default function MobileMenu() {
             height="35"
           />
         </div>
-        <div className="flex flex-col justify-center gap-20 mr-20 text-end font-lora text-3xl font-semibold">
+        <div className="flex flex-col justify-center gap-20 mr-20 md:mr-32 text-end font-lora text-3xl font-semibold">
           <Link href="">{context.text.biography}</Link>
           <Link href="">{context.text.concerts}</Link>
           <Link href="">{context.text.musicTracks}</Link>

@@ -8,7 +8,7 @@ import NavBar from '../../navBar';
 export default function Header(){
     const context=useContext(Context)
     return (
-        <div className="h-screen bg-headerDesktop bg-cover bg-no-repeat bg-center" >
+        <div className="h-screen bg-headerDesktop bg-cover bg-no-repeat bg-center lg: bg-inherit" >
                 <div className='bg-dark/40 w-full h-full   flex justify-center items-center flex-col'>
                     <div className='w-10/10'>
                     <h1 className="text-5xl text-center text-white font-cinzel text-shadow-md drop-shadow-xl ">Daniel Arias</h1>

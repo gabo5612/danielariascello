@@ -6,7 +6,7 @@ export default function Video() {
         frameBorder="0"
         allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowFullScreen
-        className="w-11/12 h-64 mt-[-1px] rounded-lg "
+        className="w-11/12 h-[40vh] py-6 rounded-lg "
       ></iframe>
     </div>
   );
