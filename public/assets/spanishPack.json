@@ -1,5 +1,21 @@
 {
     "title":"Español",
-    "texto": 2,
-    "nextConcertTitle" : "Proximos conciertos"
-}
+    "home": "Home",
+    "instrument": "Chello",
+    "biography":"Biografia",
+    "aboutMe": "Acerca de mi",
+    "aboutMeText":"Lorem ipsum dolor sit amet consectetur. Morbi neque nibh vitae feugiat consequat leo in. Gravida morbi ac tortor odio diam. Aenean dolor felis in ac  cras aliquam a. Interdum est vulputate dolor cras congue egestas aliquam.",
+    "aboutMeButton": "Biografia",
+    "nextConcertTitle" : "Proximos conciertos",
+    "concertsButton":"Ver todos",
+    "contactTitle": "Contáctame",
+    "contactName": "Nombre",
+    "contactEmail": "E-mail",
+    "contactPhone":"Teléfono",
+    "contactMessage":"Mensaje",
+    "contactButton":"Enviar mensaje",
+    "concerts":"Conciertos",
+    "musicTracks":"Piezas musicales",
+    "termOfUse":"Terminos de uso",
+    "privatePolicy":"Políticas de privacidad"
+} 

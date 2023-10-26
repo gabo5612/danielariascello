@@ -1,7 +1,46 @@
-{
-    "date": "20/10/2023- Múnich",
-    "place":"Español",
-    "person1": "Messi Alberto",
-    "person2": "Messi Alberto",
-    "person3": "Messi Alberto"
-}
+[
+    {   
+        "id":1,
+        "date": "20-10-2023",
+        "day":"20",
+        "month":"Oct",
+        "place":"Múnich",
+        "person1": "Messi Alberto",
+        "person2": "Messi Alberto",
+        "person3": "Messi Alberto",
+        "person4": "Messi Alberto"
+    },
+    {   
+        "id":2,
+        "date": "21-10-2023",
+        "day":"21",
+        "month":"Oct",
+        "place":"Múnich",
+        "person1": "Messi Alberto",
+        "person2": "Messi Alberto",
+        "person3": "Messi Alberto",
+        "person4": "Messi Alberto"
+    },
+    {
+        "id":3,
+        "date": "22-10-2023",
+        "day":"22",
+        "month":"Oct",
+        "place":"Múnich",
+        "person1": "Messi Alberto",
+        "person2": "Messi Alberto",
+        "person3": "Messi Alberto"
+        
+    },
+    {
+        "id":4,
+        "date": "22-10-2023",
+        "day":"22",
+        "month":"Oct",
+        "place":"Múnich",
+        "person1": "Messi Alberto",
+        "person2": "Messi Alberto",
+        "person3": "Messi Alberto"
+        
+    }
+    ]
