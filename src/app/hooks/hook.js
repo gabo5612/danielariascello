@@ -32,7 +32,7 @@ export const ContextProvider = ({ children }) => {
   const [concerts, setConcerts] = useState(englishConcerts);
   const [matches, setMatches] = useState(false);
   const [openLanguage, setOpenLanguage] = useState(false);
-  const [languagePool, setLanguagePool]=useState([german, spanish, french])
+  const [languagePool, setLanguagePool]=useState([english, german, spanish, french])
   const [play, { pause }] = useSound("/sounds/Faure.mp3");
   const [isPlaying, setIsPlaying] = useState(false);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
@@ -59,49 +59,39 @@ export const ContextProvider = ({ children }) => {
         setText(spanishPack);
         setConcerts(spanishConcerts);
         setLanguageImg(spanish);
+        setOpenLanguage(false)
         break;
       case 2:
         setText(frenchPack);
         setConcerts(frenchConcerts);
         setLanguageImg(french);
+        setOpenLanguage(false)
         break;
       case 3:
         setText(germanPack);
         setConcerts(germanConcerts);
         setLanguageImg(german);
+        setOpenLanguage(false)
         break;
       default:
         setText(englishPack);
         setConcerts(englishConcerts);
         setLanguageImg(english);
+        setOpenLanguage(false)
         break;
     }
   }, [language]);
 
   const handleLanguagePool= (languagePool) =>{
-    let arr=languagePool
-    
-    let toDelete=null
     if(languagePool=== spanish){
-      toDelete=spanish
       setLanguage(1)
     }else if(languagePool===french){
-      toDelete=french
       setLanguage(2)
     }else if(languagePool===german){
-      toDelete=german
       setLanguage(3)
     }else{
-      toDelete=english
       setLanguage(0)
-    }
-  for (let index = 0; index < 4 ; index++) {
-    if(languagePool===toDelete){
-      console.log(arr)
-    }
-      
-  }
-    
+    }    
   }
 
   const handlePlaying = () => {
