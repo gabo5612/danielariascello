@@ -8,21 +8,22 @@ import aboutMe2 from 'public/assets/aboutme2.png'
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { Pagination } from 'swiper/modules';
+import { useContext } from 'react';
+import { Context } from '@/app/hooks/hook';
 
 export default function Gallery() {
+  const context=useContext(Context)
   return (
-    <div className='px-4 bg-black mb-[-1px]'>
+    <div className='px-4 bg-black mb-[-1px] md:w-1/2 '>
     <Swiper
       spaceBetween={5}
-      slidesPerView={3}
-      pagination={true} modules={[Pagination]}
-      onSlideChange={() => console.log('slide change')}
-      onSwiper={(swiper) => console.log(swiper)}
+      slidesPerView={context.matches? 1:3}
+      pagination={false} modules={[Pagination]}
      className=' pt-5 mySwiper mt-[-1px] py-2'>
-      <SwiperSlide><Image className='w-full' src={aboutMe} alt='img'/></SwiperSlide>
-      <SwiperSlide><Image className='w-full' src={aboutMe} alt='img'/></SwiperSlide>
-      <SwiperSlide><Image className='w-full' src={aboutMe} alt='img'/></SwiperSlide>
-      <SwiperSlide><Image className='w-full' src={aboutMe} alt='img'/></SwiperSlide>
+      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[550px] 2xl:w-[700px]' src={aboutMe} alt='img'/></SwiperSlide>
+      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[550px] 2xl:w-[700px]' src={aboutMe} alt='img'/></SwiperSlide>
+      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[550px] 2xl:w-[700px]' src={aboutMe} alt='img'/></SwiperSlide>
+      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[550px] 2xl:w-[700px]' src={aboutMe} alt='img'/></SwiperSlide>
       ...
     </Swiper>
     </div>
