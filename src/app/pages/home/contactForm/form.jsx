@@ -14,7 +14,7 @@ export default function Form() {
     const context = useContext(Context);
 
   return (
-    <form action='' className='flex flex-col font-lora text-formText text-xs mx-3'>
+    <form action='' className='flex flex-col font-lora text-formText text-xs mx-3 lg:mx-6'>
             <label htmlFor='name'>{context.text.contactName}</label>
             <input type="text" id='name' name='Name' required  className='bg-transparent border-b border-gradiant1 my-3'/>
             <label htmlFor='name'>{context.text.contactEmail}</label>
