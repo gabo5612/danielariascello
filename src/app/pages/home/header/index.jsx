@@ -2,8 +2,8 @@
 import { useContext } from 'react';
 import { Context } from '@/app/hooks/hook';
 import 'tailwindcss/tailwind.css';
-import PlayButton from '@/app/playButton';
-import NavBar from '../../navBar';
+import PlayButton from '@/app/components/playButton';
+import NavBar from '../../../components/navBar';
 
 export default function Header(){
     const context=useContext(Context)

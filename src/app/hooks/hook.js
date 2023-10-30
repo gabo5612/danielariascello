@@ -38,6 +38,7 @@ export const ContextProvider = ({ children }) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [isHome, setIsHome] = useState(true);
 
+  console.log(isHome)
   useEffect(() => {
     if (typeof window !== "undefined") {
       setMatches(window.matchMedia("(min-width: 768px)").matches);

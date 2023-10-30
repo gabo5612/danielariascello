@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { useContext } from 'react';
-import { Context } from '../hooks/hook';
+import { Context } from '../../hooks/hook';
 
 export default function PlayButton() {
   const context = useContext(Context);

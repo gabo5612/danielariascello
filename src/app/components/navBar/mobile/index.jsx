@@ -21,7 +21,7 @@ export default function MobileMenu() {
         </div>
         <div className="flex flex-col justify-center gap-20 mr-20 md:mr-32 text-end font-lora text-3xl font-semibold">
           {!context.isHome && <Link href="/">{context.text.home}</Link>}
-          <Link href="">{context.text.biography}</Link>
+          <Link href="/pages/biography" onClick={()=>context.setIsHome(false)}>{context.text.biography}</Link>
           <Link href="">{context.text.concerts}</Link>
           <Link href="">{context.text.musicTracks}</Link>
           <Link href="">{context.text.contactTitle}</Link>

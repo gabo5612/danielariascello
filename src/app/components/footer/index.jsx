@@ -59,7 +59,7 @@ export default function Footer() {
             </div>
             </div>
             <div className="flex flex-col items-center justify-center gap-4 text-primary-white font-lora text-l lg:text-xl">
-              <Link href="/biography">{context.text.biography}</Link>
+              <Link href="/pages/biography" onClick={()=>context.setIsHome(false)}>{context.text.biography}</Link>
               <Link href="/concerts">{context.text.concerts}</Link>
               <Link href="/music">{context.text.musicTracks}</Link>
               <Link href="/contactMe">{context.text.contactTitle}</Link>
