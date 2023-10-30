@@ -18,7 +18,9 @@ module.exports = {
         'gradient-conic':
         'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
         'nextConcertbg':"url('/assets/proximosconciertos.jpg')",
-        'footerBg':"url('/assets/notas.jpg')"
+        'footerBg':"url('/assets/notas.jpg')",
+        'bioBg':"url('/assets/bioBg.png')",
+        'bioBgDesktop':"url('/assets/bioBgDesktop.png')"
       },
       colors:{
         'primary-black':'#050206',

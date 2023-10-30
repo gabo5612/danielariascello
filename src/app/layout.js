@@ -2,6 +2,7 @@ import Head from "next/head";
 import Provider from "./pages/provider";
 import {Lora, Cinzel_Decorative, Corinthia} from 'next/font/google'
 import './globals.css'
+
 const lora= Lora({
   subsets:['latin'],
   display:'swap',
@@ -31,7 +32,9 @@ export default function RootLayout({ children }) {
         <title>Daniel Arias</title>
       </Head>
       <Provider>
-        <body className="scroll-smooth">{children}</body>
+        <body className="scroll-smooth">
+          {children}
+        </body>
       </Provider>
     </html>
   )

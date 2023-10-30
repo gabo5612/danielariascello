@@ -34,11 +34,11 @@ export const ContextProvider = ({ children }) => {
   const [openLanguage, setOpenLanguage] = useState(false);
   const [languagePool, setLanguagePool]=useState([english, german, spanish, french])
   const [play, { pause }] = useSound("/sounds/Faure.mp3");
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(null);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const [isHome, setIsHome] = useState(true);
+  const [isHome, setIsHome] = useState(null);
 
-  console.log(isHome)
+
   useEffect(() => {
     if (typeof window !== "undefined") {
       setMatches(window.matchMedia("(min-width: 768px)").matches);
@@ -98,10 +98,10 @@ export const ContextProvider = ({ children }) => {
   const handlePlaying = () => {
     if (isPlaying) {
       pause();
-      setIsPlaying(!isPlaying);
+      setIsPlaying(false);
     } else {
       play();
-      setIsPlaying(!isPlaying);
+      setIsPlaying(true);
     }
   };
   const handleMenu = () => {

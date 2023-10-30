@@ -8,7 +8,7 @@ import Video from "../../pages/home/video";
 export default function Home() {
   return (
     <>
-      <Header />
+      <Header/>
       <AboutMeSection />
       <Video />
       <Concerts />

@@ -13,10 +13,10 @@ export default function Footer() {
         <div className="flex flex-col justify-between h-4/6">
           <div className=" flex flex-col gap-6 lg:flex-row justify-around">
             <div className="flex flex-col ">
-            <h2 className="text-5xl text-center text-white font-cinzel text-shadow-md lg:text-6xl ">
+            <h2 className="text-5xl text-center text-white font-cinzel text-shadow-md lg:text-6xl custom-shadow-text">
               Daniel Arias
             </h2>
-            <h3 className="text-center text-6xl text-shadow-md  font-corinthia text-secunday lg:text-7xl">
+            <h3 className="text-center text-6xl text-shadow-md  font-corinthia text-secunday lg:text-7xl custom-shadow-text">
               Cello
             </h3>
             <div className="flex justify-center items-center gap-4">
