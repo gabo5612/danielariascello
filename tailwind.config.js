@@ -20,7 +20,8 @@ module.exports = {
         'nextConcertbg':"url('/assets/proximosconciertos.jpg')",
         'footerBg':"url('/assets/notas.jpg')",
         'bioBg':"url('/assets/bioBg.png')",
-        'bioBgDesktop':"url('/assets/bioBgDesktop.png')"
+        'bioBgDesktop':"url('/assets/bioBgDesktop.png')",
+        'bgMusicDesktop':"url('/assets/bgMusicDesktop.png')"
       },
       colors:{
         'primary-black':'#050206',

@@ -3,6 +3,7 @@ import Provider from "./pages/provider";
 import {Lora, Cinzel_Decorative, Corinthia} from 'next/font/google'
 import './globals.css'
 
+
 const lora= Lora({
   subsets:['latin'],
   display:'swap',
@@ -34,8 +35,10 @@ export default function RootLayout({ children }) {
       <Provider>
         <body className="scroll-smooth">
           {children}
+         
         </body>
-      </Provider>
+
+      </Provider> 
     </html>
   )
 }

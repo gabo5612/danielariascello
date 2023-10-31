@@ -1,4 +1,4 @@
-import Home from './pages/home'
+import Home from './pages/home/page'
 import RootLayout from './layout'
 
 
