@@ -37,7 +37,7 @@ export const ContextProvider = ({ children }) => {
   const [isPlaying, setIsPlaying] = useState(null);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
   const [isHome, setIsHome] = useState(null);
-
+  console.log(isHome)
 
   useEffect(() => {
     if (typeof window !== "undefined") {

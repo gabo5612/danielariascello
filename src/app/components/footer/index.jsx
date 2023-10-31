@@ -61,7 +61,7 @@ export default function Footer() {
             <div className="flex flex-col items-center justify-center gap-4 text-primary-white font-lora text-l lg:text-xl">
               <Link href="/pages/biography" onClick={()=>context.setIsHome(false)}>{context.text.biography}</Link>
               <Link href="/concerts">{context.text.concerts}</Link>
-              <Link href="/music">{context.text.musicTracks}</Link>
+              <Link href="/pages/music" onClick={()=>context.setIsHome(false)}>{context.text.musicTracks}</Link>
               <Link href="/contactMe">{context.text.contactTitle}</Link>
             </div>
           </div>

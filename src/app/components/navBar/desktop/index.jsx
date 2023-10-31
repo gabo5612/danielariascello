@@ -30,7 +30,11 @@ export default function DesktopMenu() {
           )}
         </div>
         <div className="flex items-start font-lora text-primary-white gap-8 m-4">
-          {!context.isHome && <Link href="/">{context.text.home}</Link>}
+          {!context.isHome && (
+            <Link href="/" onClick={() => context.setIsHome(true)}>
+              {context.text.home}
+            </Link>
+          )}
           <Link
             href="/pages/biography"
             onClick={() => context.setIsHome(false)}
@@ -38,7 +42,9 @@ export default function DesktopMenu() {
             {context.text.biography}
           </Link>
           <Link href="">{context.text.concerts}</Link>
-          <Link href="">{context.text.musicTracks}</Link>
+          <Link href="/pages/music" onClick={() => context.setIsHome(false)}>
+            {context.text.musicTracks}
+          </Link>
           <Link href="">{context.text.contactTitle}</Link>
           <div
             onMouseOver={() => context.setOpenLanguage(true)}
