@@ -3,7 +3,7 @@ import Footer from "@/app/components/footer";
 import NavBar from "@/app/components/navBar";
 import HeaderBio from "./sections/HeaderBio";
 import TextBio from "./sections/TextBio";
-import GalleryBio from "./sections/GalleryBio";
+
 
 
 export default function Biography() {
@@ -12,7 +12,7 @@ export default function Biography() {
     <NavBar/>
     <HeaderBio/>
     <TextBio/>
-    <GalleryBio/>
+    
     <Footer/>
    </>
   )

@@ -21,7 +21,9 @@ module.exports = {
         'footerBg':"url('/assets/notas.jpg')",
         'bioBg':"url('/assets/bioBg.png')",
         'bioBgDesktop':"url('/assets/bioBgDesktop.png')",
-        'bgMusicDesktop':"url('/assets/bgMusicDesktop.png')"
+        'bgMusicDesktop':"url('/assets/bgMusicDesktop.png')",
+        'videoMobileBG': "url('/assets/VideoMobile.mp4')",
+        'videoDesktopBG': "url('/assets/videoDesktopBg.mp4')"
       },
       colors:{
         'primary-black':'#050206',
