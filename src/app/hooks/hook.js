@@ -25,7 +25,7 @@ export const ContextProvider = ({ children }) => {
   const german = "/assets/german.svg";
   const spanish = "/assets/spain.svg";
   const french = "/assets/france.svg";
-  const video = '/assets/video.mp4'
+
   const [language, setLanguage] = useState(0);
   const [text, setText] = useState(englishPack);
   const [languageImg, setLanguageImg] = useState(english);
@@ -141,7 +141,7 @@ export const ContextProvider = ({ children }) => {
         setOpenLanguage,
         languagePool, 
         setLanguagePool,
-        video
+        
       }}
     >
       {children}
