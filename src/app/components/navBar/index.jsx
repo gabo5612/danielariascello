@@ -8,13 +8,13 @@ import DesktopMenu from "./desktop";
 export default function NavBar() {
   const context = useContext(Context);
   return (
-    <nav>
+    <nav className="">
       {context.matches ? (
         <DesktopMenu />
       ) : (
         <>
           <div
-            className="absolute top-4 right-4 z-10"
+            className="absolute top-4 right-4 z-50"
             onClick={() => context.handleMenu()}
           >
             {!context.menuIsOpen && (

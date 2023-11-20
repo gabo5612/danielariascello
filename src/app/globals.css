@@ -523,3 +523,24 @@ a {
 ._1PreE::-ms-input-placeholder {
   color: var(--searchPlaceHolder);
 }
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: none;
+    scrollbar-color: #1c1c1c #616161;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #616161;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #1c1c1c;
+    border-radius: 8px;
+    border: 2px none #ffffff;
+  }

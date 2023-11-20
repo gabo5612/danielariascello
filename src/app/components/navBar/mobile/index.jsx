@@ -9,7 +9,7 @@ export default function MobileMenu() {
   const heightWidht = "45";
 
   return (
-    <div className="bg-primary-white/90 h-[100vh] w-4/5 fixed right-0 top-0 z-20">
+    <div className="bg-primary-white/90 h-[100vh] w-4/5 fixed right-0 top-0 z-50">
       <div className="flex flex-col justify-evenly h-full">
         <div className="m-5 absolute right-0 top-0" onClick={()=> context.handleMenu()}>
           <Image
