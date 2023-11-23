@@ -8,7 +8,7 @@ export default function HeaderMusic() {
     <div
       className={
         context.matches
-          ? "bg-bgMusicDesktop h-[70dvh] bg-center bg-cover"
+          ? "bg-bgMusicDesktop h-[70dvh] bg-right bg-cover bg-no-repeat"
           : "bg-bioBg h-[100dvh] bg-center bg-cover"
       }
     >
