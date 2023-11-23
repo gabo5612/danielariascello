@@ -11,7 +11,7 @@ export default function Header() {
   const context = useContext(Context);
 
   return (
-    <div className="h-screen w-full ">      
+    <div className="h-[100dvh] w-full ">      
      
       <NavBar/>
       <HeaderText/>
