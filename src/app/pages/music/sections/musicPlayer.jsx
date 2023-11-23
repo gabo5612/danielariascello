@@ -26,15 +26,15 @@ export default function MusicPlayer() {
           );
     }
     const playList = [
-        { src: '/sounds/Faure.mp3', img: '/assets/aboutme.png' , title:'cancion 1'},
-        { src: '/sounds/Faure.mp3', img: '/assets/aboutme1.png' , title:'cancion 2' },
-        { src: '/sounds/Faure.mp3', img: '/assets/aboutme2.png' , title:'cancion 3'},
+        { src: '/sounds/Faure.mp3', img: '/assets/aboutme.png' , title:context.text.song1},
+        { src: '/sounds/Faure.mp3', img: '/assets/aboutme1.png' , title:context.text.song2 },
+        { src: '/sounds/Faure.mp3', img: '/assets/aboutme2.png' , title:context.text.song3},
       ]
 
       
     const Player = () => (
         <AudioPlayer
-          
+        showSkipControls
           src={playList[currentTrack].src}
           onPlay={e => console.log("onPlay")}
           onClickNext={handleClickNext}
