@@ -11,9 +11,9 @@ export default function Header() {
   const context = useContext(Context);
 
   return (
-    <div className="h-screen w-full " onLoad={() => context.setIsHome(true)}>      
+    <div className="h-screen w-full ">      
      
-    
+      <NavBar/>
       <HeaderText/>
       <VideoBG/>
     </div>

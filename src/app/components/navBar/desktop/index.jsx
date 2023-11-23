@@ -6,21 +6,11 @@ import { useContext } from "react";
 
 export default function DesktopMenu() {
   const context = useContext(Context);
-  const widthHeightDesktop = "25";
-  /* poner las 4 opciones y desaparecer la principal*/
-  const languagePools = context.languagePool.map((languagePool) => (
-    <Image
-      key={languagePool}
-      alt=""
-      src={languagePool}
-      height={widthHeightDesktop}
-      width={widthHeightDesktop}
-      onClick={() => context.handleLanguagePool(languagePool)}
-      className="cursor-pointer"
-    />
-  ));
+ 
+
+
   return (
-    <div className="absolute top-0 right-0 w-full">
+    <div className="absolute top-0 right-0 w-full z-50">
       <div className="flex items-start justify-between">
         <div>
           {!context.isHome && (
@@ -31,36 +21,36 @@ export default function DesktopMenu() {
         </div>
         <div className="flex items-start font-lora text-primary-white gap-8 m-4">
           {!context.isHome && (
-            <Link href="/" onClick={() => context.setIsHome(true)}>
+            <Link href="/" onClick={()=>context.setIsHome(true)}>
               {context.text.home}
             </Link>
           )}
           <Link
             href="/pages/biography"
-            onClick={() => context.setIsHome(false)}
+            onClick={context.setIsHome(false)}
           >
             {context.text.biography}
           </Link>
           <Link href="">{context.text.concerts}</Link>
-          <Link href="/pages/music" onClick={() => context.setIsHome(false)}>
+          <Link href="/pages/music" onClick={context.setIsHome(false)}>
             {context.text.musicTracks}
           </Link>
           <Link href="">{context.text.contactTitle}</Link>
           <div
-            onMouseOver={() => context.setOpenLanguage(true)}
-            onMouseLeave={() => context.setOpenLanguage(false)}
-          >
+            onMouseOver={context.setOpenLanguage(true)}
+            onMouseLeave={context.setOpenLanguage(false)}
+            className="z-50">
             {!context.openLanguage && (
               <Image
                 src={context.languageImg}
                 alt=""
-                height={widthHeightDesktop}
-                width={widthHeightDesktop}
-                className="cursor-pointer"
+                height={25}
+                width={25}
+                className="cursor-pointer z-50"
               />
             )}
             {context.openLanguage && (
-              <div className="flex gap-2 flex-col">{languagePools}</div>
+              <div className="flex gap-2 flex-col">{context.languagePools}</div>
             )}
           </div>
         </div>

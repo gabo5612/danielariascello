@@ -1,6 +1,6 @@
 export default function Video() {
   return (
-    <div className="bg-primary-black flex justify-center">
+    <div className="bg-primary-black flex justify-center my-[-1px]">
       <iframe
         src="https://www.youtube.com/embed/_vRXSncIUoQ"
         frameBorder="0"

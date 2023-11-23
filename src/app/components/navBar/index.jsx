@@ -8,7 +8,7 @@ import DesktopMenu from "./desktop";
 export default function NavBar() {
   const context = useContext(Context);
   return (
-    <nav className="">
+    <nav>
       {context.matches ? (
         <DesktopMenu />
       ) : (

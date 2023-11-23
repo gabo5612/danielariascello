@@ -19,11 +19,11 @@ export default function Gallery() {
       spaceBetween={5}
       slidesPerView={context.matches? 1:3}
       pagination={false} modules={[Pagination]}
-     className=' pt-5 mySwiper mt-[-1px] py-2 '>
-      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[550px] xl:h-[850px] xl:ml-24 2xl:w-[650px]' src={aboutMe} alt='img'/></SwiperSlide>
-      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[550px] xl:h-[850px] xl:ml-24 2xl:w-[650px]' src={aboutMe} alt='img'/></SwiperSlide>
-      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[550px] xl:h-[850px] xl:ml-24 2xl:w-[650px]' src={aboutMe} alt='img'/></SwiperSlide>
-      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[550px] xl:h-[850px] xl:ml-24 2xl:w-[650px]' src={aboutMe} alt='img'/></SwiperSlide>
+     className=' pt-5 mySwiper mt-2 py-2 '>
+      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[450px] xl:h-[650px] xl:ml-24 2xl:w-[650px]' src={aboutMe} alt='img'/></SwiperSlide>
+      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[450px] xl:h-[650px] xl:ml-24 2xl:w-[650px]' src={aboutMe} alt='img'/></SwiperSlide>
+      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[450px] xl:h-[650px] xl:ml-24 2xl:w-[650px]' src={aboutMe} alt='img'/></SwiperSlide>
+      <SwiperSlide><Image className='w-full md:w-[350px] lg:w-[450px] xl:w-[450px] xl:h-[650px] xl:ml-24 2xl:w-[650px]' src={aboutMe} alt='img'/></SwiperSlide>
       ...
     </Swiper>
     </div>

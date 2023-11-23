@@ -7,6 +7,7 @@ export default function VideoBG() {
           autoPlay={true}
           loop
           muted
+          playsinline 
           className=" w-full h-full object-cover absolute top-0"
         >
           {" "}

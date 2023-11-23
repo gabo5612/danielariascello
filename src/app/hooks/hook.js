@@ -9,6 +9,7 @@ import frenchConcerts from "/public/assets/frenchConcerts.json";
 import germanPack from "/public/assets/germanPack.json";
 import germanConcerts from "/public/assets/germanConcerts.json";
 import useSound from "use-sound";
+import Image from "next/image";
 export const Context = createContext();
 /*
 const date =new Date()
@@ -17,6 +18,7 @@ const month= date.getMonth()
 const year=  date.getFullYear()
 
 const formattedDate = day+ month + year
+hacer una funcion superior que haga persistencia en los datos ya que por el momento no esta manteniendo los datos
 */
 
 export const ContextProvider = ({ children }) => {
@@ -36,8 +38,19 @@ export const ContextProvider = ({ children }) => {
   const [play, { pause }] = useSound("/sounds/Faure.mp3");
   const [isPlaying, setIsPlaying] = useState(null);
   const [menuIsOpen, setMenuIsOpen] = useState(false);
-  const [isHome, setIsHome] = useState(null);
+  const [isHome, setIsHome] = useState(true);
   console.log(isHome)
+  const languagePools = languagePool.map((languagePool) => (
+    <Image
+      key={languagePool}
+      alt=""
+      src={languagePool}
+      height={25}
+      width={25}
+      onClick={() => handleLanguagePool(languagePool)}
+      className="cursor-pointer z-50"
+    />
+  ));
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -83,6 +96,7 @@ export const ContextProvider = ({ children }) => {
     }
   }, [language]);
 
+
   const handleLanguagePool= (languagePool) =>{
     if(languagePool=== spanish){
       setLanguage(1)
@@ -107,8 +121,12 @@ export const ContextProvider = ({ children }) => {
   const handleMenu = () => {
     setMenuIsOpen(!menuIsOpen);
   };
-  const handleHome = () => {
-    setIsHome(!isHome);
+  const handleHome = (value) => {
+    if(value===0){
+      setIsHome(true)
+    }else{
+      setIsHome(false)
+    }
   };
   return (
     <Context.Provider
@@ -141,7 +159,7 @@ export const ContextProvider = ({ children }) => {
         setOpenLanguage,
         languagePool, 
         setLanguagePool,
-        
+        languagePools
       }}
     >
       {children}
