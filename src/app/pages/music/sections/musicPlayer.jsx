@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useContext, useState } from "react";
 import AudioPlayer from "react-h5-audio-player";
 import "react-h5-audio-player/lib/styles.css";
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
+import { Scrollbar, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -35,31 +35,24 @@ export default function MusicPlayer() {
 
   const Player = () => (
     <AudioPlayer
-      showSkipControls
       showFilledVolume
       src={playList[currentTrack].src}
-      onPlay={() => console.log("onPlay")}
       onClickNext={handleClickNext}
-      onEnded={handleEnd}
       className="rounded-lg"
     />
   );
-
+ 
   const handleClickNext = () => {
     setTrackIndex((currentTrack) =>
       currentTrack < playList.length - 1 ? currentTrack + 1 : 0
     );
   };
-
-  const handleEnd = () => {
-    setTrackIndex((currentTrack) =>
-      currentTrack < playList.length - 1 ? currentTrack + 1 : 0
-    );
-  };
-
   const handleSlideChange = (swiper) => {
     setTrackIndex(swiper.activeIndex);
   };
+
+
+
 
   return (
     <div className="bg-primary-black flex flex-col items-center justify-center py-12">
@@ -69,10 +62,9 @@ export default function MusicPlayer() {
             modules={[Scrollbar, A11y]}
             spaceBetween={50}
             slidesPerView={1}
-   
             watchSlidesProgress
-        
             onSlideChange={(swiper) => handleSlideChange(swiper)}
+            className="cursor-pointer"
           >
             {playList.map((item, index) => (
               <SwiperSlide key={index}>
